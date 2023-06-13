@@ -10,7 +10,7 @@ import {
 } from '@tanstack/react-table';
 
 
-import { makeData, Person } from './make-data';
+import { makeData, Person } from '../faker/make-data';
 
 export default function DataTableDemo() {
   const [sorting, setSorting] = useState<SortingState>([]);
@@ -86,7 +86,7 @@ export default function DataTableDemo() {
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     debugTable: true,
-  })
+  });
 
   return (
     <div className="p-2">
