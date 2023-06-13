@@ -8,10 +8,10 @@ export const meta: V2_MetaFunction = () => {
 };
 
 
-export default function Ping() {
+export default function DataTabeDemo() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>PING 🎉 115</h1>
+      <h1>Data Table Demo</h1>
     </div>
   );
 }
