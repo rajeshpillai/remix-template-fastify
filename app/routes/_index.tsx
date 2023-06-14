@@ -20,8 +20,9 @@ export default function Index() {
   console.log("Render: DataXX: ", new Date().toISOString(), data[0]);
   
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix 🎉 118</h1>
+    <div className="p-10">
+      <h1 className="text-3xl font-bold underline">
+        Welcome to Remix 🎉 118</h1>
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
   );
