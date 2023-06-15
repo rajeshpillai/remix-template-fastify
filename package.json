@@ -3,7 +3,6 @@
   "sideEffects": false,
   "scripts": {
     "dev": "npm-run-all --parallel \"dev:*\"",
-    "xdev:node": "cross-env NODE_ENV=development nodemon --require dotenv/config ./server.mjs --watch ./server.mjs",
     "dev:remix": "remix watch",
     "dev:pm2": "pm2-dev ./server.mjs",
     "prod:build": "remix build",
@@ -17,10 +16,8 @@
   "dependencies": {
     "@mcansh/remix-fastify": "^2.7.4",
     "@remix-run/css-bundle": "^1.17.0",
-    "@remix-run/express": "^1.17.0",
     "@remix-run/node": "^1.17.0",
     "@remix-run/react": "^1.17.0",
-    "@tanstack/react-table": "^8.9.2",
     "cross-env": "^7.0.3",
     "fastify": "^4.17.0",
     "isbot": "^3.6.8",
@@ -32,7 +29,6 @@
     "@faker-js/faker": "^8.0.2",
     "@remix-run/dev": "^1.17.0",
     "@remix-run/eslint-config": "^1.17.0",
-    "@types/compression": "^1.7.2",
     "@types/morgan": "^1.9.4",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
